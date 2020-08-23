@@ -1,0 +1,76 @@
+#page-success-register {
+  background: var(--color-primary);
+  background-image: url("../../images/success-background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.content-container {
+  text-align: center;
+  /*margin-bottom: 10rem;*/ 
+}
+
+.content-container img {
+  margin-bottom: 3rem;
+}
+
+.content-container h1 {
+  color: var(--color-title-in-primary);
+  font-size: 5rem; 
+  margin-bottom: 1.5rem;
+}
+
+.content-container h2 {
+  color: var(--color-text-in-primary); 
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.button-access {
+  display: flex; /* Devido a propriedade justify-content */ 
+  justify-content: center;
+  margin: 6.2rem 0;
+}
+
+.button-access a {
+  width: 15rem;
+  height: 5rem;
+  border-radius: 0.8rem;
+  color: var(--color-button-text);
+  font: 600 1.4rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.button-access a.study {
+  background: var(--color-secondary);
+}
+
+.button-access a.study:hover {
+  background: var(--color-secondary-dark);
+}
+
+@media (max-width: 770px){
+  :root{
+    font-size: 40%
+  }
+
+  #page-success-register {
+    background-position: center;
+    background-attachment: fixed;
+    background-size: calc(115vw) calc(200vh);
+  }
+
+  .content-container img {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .button-access a {
+    font-size: 100%;
+  }
+}
